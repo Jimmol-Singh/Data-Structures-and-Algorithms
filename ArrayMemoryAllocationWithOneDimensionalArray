@@ -1,0 +1,43 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		//Formula
+		//Total memory  = Number of elements * size of one element
+		
+		//One integer element is 4 byte.
+		//One Character element is 1 byte.
+		//One Float element is 8 byte.
+		
+		int intElementSize = 4;
+		int charElementSize = 1;
+		int floatElementSize = 8;
+		
+		
+		//initializing the arrays
+		float[] floatArray = {1f, 5f, 3f, 2f, 9f};
+		int[] intArray = {23, 45, 23, 65, 12};
+		char[] charArray = {'a', 'b', 'c', 'd', 'e'};
+		
+		//getting the length of each arrays
+		int floatArrayLength = floatArray.length;
+		int intArrayLength = intArray.length;
+		int charArrayLength = charArray.length;
+		
+    //memory size calculation
+		int intArraySize = intArrayLength * intElementSize;
+		int charArraySize = charArrayLength * charElementSize;
+		int floatArraySize = floatArrayLength * floatElementSize;
+			
+		//output calculation
+		System.out.println("Total memory allocated for the Integer array: " + intArraySize + " byte");
+		System.out.println("Total memory allocated for the Character array: " + charArraySize + " byte");
+		System.out.println("Total memory allocated for the Float array: " + floatArraySize + " byte");
+			
+		
+		
+		
+
+	}
+
+}
