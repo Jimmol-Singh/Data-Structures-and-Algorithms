@@ -1,0 +1,69 @@
+package test;
+
+public class main {
+
+	public static void main(String[] args) {
+	
+	 //objective: separate postive and negative integer from each other.
+     //all positive will be on the left side and negative integers on the right side
+	 / doesnt have to be sorted.
+	  
+		
+		
+	  //create new array
+		
+	  int[] array = {1,-2, 3, -5, 9, -4, 6, -1, 4, -2, 4, -7, 6};
+	  
+	  
+	  //get array length
+	  int arrayLength = array.length;
+	  
+	  //create temp array
+	  int[] temp = new  int[arrayLength];
+	  
+	  //this will help keep track of the position in the array when adding the values to the temp array.
+	  int tempPosition = 0;
+	  
+	  
+	  //this is where the display for orinal array occurs
+	  System.out.print("Original: ");
+	  for(int h= 0; h < array.length; h++) {
+		  System.out.print(array[h] + " ");
+	  }
+	  
+	  
+	  //this loop will add only the positie integers 
+	  //first to the array therefore separting the negative integers.
+	  for(int i = 0; i < arrayLength; i++) {
+		  if(array[i] >= 0) {
+			  temp[tempPosition++] = array[i];
+		  }
+	  }
+	  
+	  
+	  //this loop will finally add the negative integers to the temp array
+	  for(int j = 0; j < arrayLength; j++) {
+		  if(array[j] < 0) {
+			  temp[tempPosition++] = array[j];
+		  }
+	  }
+	  
+	  
+	  
+	  
+	  //next line
+	  System.out.println();
+	  
+	  //display new array
+	  System.out.print("New: ");
+	  for(int k = 0; k < temp.length; k++) {
+		  System.out.print(temp[k]+ " ");
+	  }
+	  
+	  
+	  
+	  
+
+	}
+
+}
